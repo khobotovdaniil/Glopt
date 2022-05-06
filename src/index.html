@@ -6,33 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Glopt</title>
-    <meta name="title" content="Glopt">
-    <meta name="description" content="Glopt">
+    <title>Global Opt</title>
+    <meta name="title" content="Global Opt">
+    <meta name="description" content="Global Opt">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
     
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-    <section class="promo">
+    <section id="promo" class="promo">
         <div class="container">
             <header class="header"> 
                 <div class="header__logo"><img src="icons/promo/logo.png" alt="logo"></div>
-                <nav>
-                    <ul class="header__menu">
-                        <li class="header__menu__item"><a href="#">Преимущества</a></li>
-                        <li class="header__menu__divider"></li>
-                        <li class="header__menu__item"><a href="#">Наша работа</a></li>
-                        <li class="header__menu__divider"></li>
-                        <li class="header__menu__item"><a href="#">Цены</a></li>
-                        <li class="header__menu__divider"></li>
-                        <li class="header__menu__item"><a href="#">Схема работы</a></li>
-                        <li class="header__menu__divider"></li>
-                        <li class="header__menu__item"><a href="#">Отзывы</a></li>
-                        <li class="header__menu__divider"></li>
-                        <li class="header__menu__item"><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="header__menu">
+                    <li class="header__menu__item"><a href="#advantages">Преимущества</a></li>
+                    <li class="header__menu__divider"></li>
+                    <li class="header__menu__item"><a href="#">Наша работа</a></li>
+                    <li class="header__menu__divider"></li>
+                    <li class="header__menu__item"><a href="#">Цены</a></li>
+                    <li class="header__menu__divider"></li>
+                    <li class="header__menu__item"><a href="#">Схема работы</a></li>
+                    <li class="header__menu__divider"></li>
+                    <li class="header__menu__item"><a href="#">Отзывы</a></li>
+                    <li class="header__menu__divider"></li>
+                    <li class="header__menu__item"><a href="#">Контакты</a></li>
+                </ul>
                 <div class="header__contact">
                     <div class="header__contact__text">
                         <p>Есть вопросы?</p>
@@ -52,24 +74,104 @@
                 <div class="promo__divider__line"></div>
             </div>
             <div class="promo__services">
-                <div class="promo__services_item">
-                    <div class="promo__services_img"><img src="icons/promo/oversized_cargo.png" alt="oversized_cargo"></div>
-                    <p class="promo__services_descr">Перевозка негабаритных и крупнотоннажных грузов</p>
+                <div class="promo__services__item">
+                    <div class="promo__services__img"><img src="icons/promo/oversized_cargo.png" alt="oversized_cargo"></div>
+                    <p class="promo__services__descr">Перевозка негабаритных и крупнотоннажных грузов</p>
                 </div>
-                <div class="promo__services_item">
-                    <div class="promo__services_img"><img src="icons/promo/declaration.png" alt="declaration"></div>
-                    <p class="promo__services_descr">Самостоятельно декларируем и проводим таможенную очистку с оптимизацией кодов и ставок</p>
+                <div class="promo__services__item">
+                    <div class="promo__services__img"><img src="icons/promo/declaration.png" alt="declaration"></div>
+                    <p class="promo__services__descr">Самостоятельно декларируем и проводим таможенную очистку с оптимизацией кодов и ставок</p>
                 </div>
-                <div class="promo__services_item">
-                    <div class="promo__services_img"><img src="icons/promo/door_to_door.png" alt="door_to_door"></div>
-                    <p class="promo__services_descr">Осуществляем прямые поставки с заводов от двери до двери</p>
+                <div class="promo__services__item">
+                    <div class="promo__services__img"><img src="icons/promo/door_to_door.png" alt="door_to_door"></div>
+                    <p class="promo__services__descr">Осуществляем прямые поставки с заводов от двери до двери</p>
                 </div>
-                <div class="promo__services_item">
-                    <div class="promo__services_img"><img src="icons/promo/express.png" alt="express"></div>
-                    <p class="promo__services_descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</p>
+                <div class="promo__services__item">
+                    <div class="promo__services__img"><img src="icons/promo/express.png" alt="express"></div>
+                    <p class="promo__services__descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</p>
                 </div>
             </div>
             <button class="button button_big">Получить расчет</button>
+        </div>
+    </section>
+
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="title title_fz26">Преимущества работы с GlobalOpt</h2>
+            <div class="advantages__wrapper">
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/offices.png" alt="offices">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Офисы в Китае и России</h3>
+                        <p class="advantages__descr">Офисы расположены в Москве, столице России.  И в Гуанчжоу, мировом торговом мегаполисе Китая.</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/declare.png" alt="declare">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Декларируем груз с оптимизацией</h3>
+                        <p class="advantages__descr">Идем на встречу своим клиентам и помогаем растаможить груз с оптимизацией кодов и ставок.</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/personnel.png" alt="personnel">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Квалифицированные кадры</h3>
+                        <p class="advantages__descr">Наши сотрудники имеют большой опыт в логистике с Китаем и в совершенстве владеют китайским и английским языками.</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/search.png" alt="search">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Осуществляем поиск производителей</h3>
+                        <p class="advantages__descr">Помогаем нашим клиентам найти интересующий вас товар или производителя в Китае.</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/stock.png" alt="stock">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Собственный склад в Китае</h3>
+                        <p class="advantages__descr">Свой склад в Китае, позволяет собирать и проверять и упаковывать  ваши товары, перед отправкой.</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/transfer.png" alt="transfer">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Перевод денег в Китай</h3>
+                        <p class="advantages__descr">Помогаем переводить и оплачивать товар в Китае на льготных условиях.</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/wholesale.png" alt="wholesale">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Делаем оптовые поставки под ключ</h3>
+                        <p class="advantages__descr">Берём на себя все заботы связанные с  закупкой, проверкой на качество, логистикой и растаможкой. От вас требуется лишь заполнить техническое задание, одобрить  образцы товаров и после принять товар на своём складе!</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img">
+                        <img src="icons/advantages/plane.png" alt="plane">
+                    </div>
+                    <div class="advantages__text">
+                        <h3 class="title title_fz16 title_red advantages__title">Поездка на производство в Китай</h3>
+                        <p class="advantages__descr">У нас большой опыт в бизнес поездках по Китаю. Мы с большой радостью и желанием организуем вам такую поездку в Китай под ключ. Сделаем визу, трансфер из аэропорта, забронируем отель, предоставим переводчика. Организуем поездку на производство. Шоп тур. Мебельный тур.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

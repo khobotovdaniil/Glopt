@@ -1,0 +1,35 @@
+.advantages {
+    background-color: #f3f3f3;
+    min-height: 590px;
+    padding: 60px 0 50px 0;
+    &__wrapper {
+        margin-top: 30px;
+        display: grid;
+        grid-template: repeat(4, minmax(55px, auto)) / repeat(2, 1fr);
+        grid-auto-rows: minmax(55px, auto);
+        gap: 35px 60px;
+    }
+    &__item {
+        display: flex;
+    }
+    &__img {
+        margin-top: 8px;
+        width: 65px;
+        height: 65px;
+        margin-right: 20px;
+        img {
+            height: 100%;
+        }
+    }
+    &__title {
+        text-align: left;
+    }
+    &__text {
+        max-width: 450px;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+    }
+}

@@ -1,0 +1,25 @@
+@media (max-width: 1199px) {
+    .advantages {
+        padding: 50px 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 30px 10px;
+        &__wrapper {
+            gap: 20px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
