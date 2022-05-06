@@ -25,6 +25,13 @@ a {
         }
 }
 
+.divider {
+    width: 148px;
+    height: 1px;
+    margin: 20px auto;
+    background-color: var(--main-color);
+}
+
 p {
     margin-bottom: 0;
 }
@@ -39,10 +46,12 @@ p {
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/advantages';
+@import 'blocks/services';
 
-
+@import 'media/media';
 @import 'media/titles_media';
 @import 'media/buttons_media';
 @import 'media/header_media';
 @import 'media/promo_media';
 @import 'media/advantages_media';
+@import 'media/services_media';

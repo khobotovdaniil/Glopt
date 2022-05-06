@@ -36,6 +36,7 @@
 
 @media (max-width: 575px) {
     .promo {
+        padding: 20px 0;
         &__services {
             grid-template-columns: 280px;
             gap: 10px;

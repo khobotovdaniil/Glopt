@@ -12,13 +12,6 @@
             background-color: var(--main-color);
         }
     }
-
-    a {
-        color: var(--main-color);
-        &:hover {
-            border-bottom: none;
-        }
-    }
 }
 
 @media (max-width: 575px) {
