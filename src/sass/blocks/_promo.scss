@@ -1,0 +1,46 @@
+.promo {
+    padding-top: 23px;
+    min-height: 680px;
+    background: url('../img/main_bg.jpg') center center/cover no-repeat;
+    &__divider {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__circle {
+            margin: 0 10px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #fff;
+        }
+        &__line {
+            background-color: #fff;
+            height: 1px;
+            width: 40%;
+        }
+    }
+    &__services {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        justify-content: space-between;
+        &_img {
+           width: 65px;
+           height: 50px;
+           margin: 0 auto;
+           img {
+               max-width: 100%;
+               max-height: 100%;
+           }
+        }
+        &_descr {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}

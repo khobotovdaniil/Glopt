@@ -5,14 +5,37 @@
 @import 'base/variables';
 @import 'base/mixins';
 
+:root {
+    --main-color: #ec644b;;
+    --active-color: #dc5238;
+}
+
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+        &:hover {
+            color: var(--main-color);
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--main-color);
+        }
+}
+
+p {
+    margin-bottom: 0;
+}
+
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/titles';

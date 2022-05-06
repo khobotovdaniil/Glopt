@@ -1,0 +1,45 @@
+.title {
+    font-weight: 700;
+    color: #2e2e2e;
+    text-align: center;
+    &_fz72 {
+        margin-top: 23px;
+        margin-bottom: 0;
+        font-size: 72px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    &_fz42 {
+        font-size: 42px;
+        font-weight: normal;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    &_fz26 {
+        font-size: 26px;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
+    &_fz24 {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+    &_fz21 {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &_red {
+        color: var(--main-color);
+    }
+    &_white {
+        color: #fff;
+    }
+}
