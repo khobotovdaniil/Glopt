@@ -1,0 +1,36 @@
+.work {
+    padding-top: 50px;
+    min-height: 454px;
+    background-color: #f3f3f3;
+    &__wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 0 10px 30px 10px;
+        width: 260px;
+    }
+    &__img {
+        position: relative;
+        margin: 0 auto;
+        width: 61px;
+        height: 60px;
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-45%);
+            max-height: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__descr {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--text-color-3a);
+    }
+}

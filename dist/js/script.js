@@ -1,3 +1,4 @@
+    //mobile menu
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.header__menu'),
     menuItem = document.querySelectorAll('.header__menu__item'),
@@ -14,4 +15,26 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('header__menu_active');
         })
     })
-})
+});
+
+    //owl carousel
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        center:true,
+        loop:true,
+        margin:0,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:7000,
+        autoplaySpeed:1000,
+        navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:3
+            },
+        }
+    });
+});

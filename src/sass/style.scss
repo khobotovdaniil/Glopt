@@ -1,5 +1,11 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
+@import 'libs/owl-core';
+@import 'libs/owl-animate';
+@import 'libs/owl-autoheight';
+// @import 'libs/owl-lazyload';
+// @import 'libs/owl-theme.default';
+// @import 'libs/owl-theme';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -49,9 +55,11 @@ p {
 @import 'blocks/promo';
 @import 'blocks/advantages';
 @import 'blocks/services';
-@import 'blocks/agent';
+@import 'blocks/agent_manager';
 @import 'blocks/prices';
 @import 'blocks/forms';
+@import 'blocks/work';
+@import 'blocks/feedbacks';
 
 @import 'media/media';
 @import 'media/titles_media';
@@ -60,6 +68,8 @@ p {
 @import 'media/promo_media';
 @import 'media/advantages_media';
 @import 'media/services_media';
-@import 'media/agent_media';
+@import 'media/agent_manager_media';
 @import 'media/prices_media';
 @import 'media/forms_media';
+@import 'media/work_media';
+@import 'media/feedbacks_media';

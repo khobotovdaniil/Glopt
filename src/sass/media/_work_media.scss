@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+    .work {  
+        &__item {
+            width: 200px;
+        }    
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .work {
+        padding-top: 30px;
+        &__item {
+            width: 260px;
+        }
+    }
+    
+}

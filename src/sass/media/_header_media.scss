@@ -124,6 +124,7 @@
             border-radius: 20px;
             &_active {
                 left: 5%;
+                z-index: 99;
             }
             &__item {
                 font-size: 20px;
