@@ -1,6 +1,6 @@
 .title {
     font-weight: 700;
-    color: #2e2e2e;
+    color: var(--text-color-2e);
     text-align: center;
     &_fz72 {
         margin-top: 23px;
@@ -24,7 +24,7 @@
         font-size: 24px;
         line-height: 1.2;
         font-weight: 300;
-        color: #ffffff;
+        color: #fff;
         margin-top: 10px;
     }
     &_fz21 {

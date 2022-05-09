@@ -7,6 +7,8 @@
 :root {
     --main-color: #ec644b;;
     --active-color: #dc5238;
+    --text-color-2e: #2e2e2e;
+    --text-color-3a: #3a3a3a;
 }
 
 * {
@@ -47,6 +49,9 @@ p {
 @import 'blocks/promo';
 @import 'blocks/advantages';
 @import 'blocks/services';
+@import 'blocks/agent';
+@import 'blocks/prices';
+@import 'blocks/forms';
 
 @import 'media/media';
 @import 'media/titles_media';
@@ -55,3 +60,6 @@ p {
 @import 'media/promo_media';
 @import 'media/advantages_media';
 @import 'media/services_media';
+@import 'media/agent_media';
+@import 'media/prices_media';
+@import 'media/forms_media';

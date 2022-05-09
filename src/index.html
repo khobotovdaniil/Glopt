@@ -45,9 +45,9 @@
                 <ul class="header__menu">
                     <li class="header__menu__item"><a href="#advantages">Преимущества</a></li>
                     <li class="header__menu__divider"></li>
-                    <li class="header__menu__item"><a href="#">Наша работа</a></li>
+                    <li class="header__menu__item"><a href="#services">Наша работа</a></li>
                     <li class="header__menu__divider"></li>
-                    <li class="header__menu__item"><a href="#">Цены</a></li>
+                    <li class="header__menu__item"><a href="#prices">Цены</a></li>
                     <li class="header__menu__divider"></li>
                     <li class="header__menu__item"><a href="#">Схема работы</a></li>
                     <li class="header__menu__divider"></li>
@@ -175,11 +175,11 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h2 class="title title_fz26">Наша работа - больше чем просто доставка</h2>
             <div class="divider"></div>
-            <p class="title title_fz21 services__subheader">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.</p>
+            <p class="title title_fz21 services__subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.</p>
             <div class="services__wrapper">
                 <div class="services__item">
                     <div class="services__img">
@@ -203,6 +203,95 @@
                     <p class="services__descr">Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="agent" class="agent"> 
+        <div class="container">
+            <div class="agent__img">
+                <img src="icons/agent.png" alt="agent">
+            </div>
+            <h2 class="title title_fz26 title_white agent__title">Агент в Китае</h2>
+            <p class="agent__descr">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</p>
+        </div>
+    </section>
+
+    <section id="prices" class="prices">
+        <div class="container">
+            <h2 class="title title_fz26">Цены на любой вариант доставки</h2>
+            <div class="divider"></div>
+            <p class="title title_fz21 prices__subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений.
+                Любой груз доставим вовремя.</p>
+            <div class="prices__wrapper">
+                <div class="prices__item">
+                    <div class="prices__item__header">
+                        <h3 class="title title_fz16 title_white">Доставка морем</h3>
+                    </div>
+                    <div class="prices__item__img">
+                        <img src="icons/prices/sea.png" alt="sea">
+                    </div>
+                    <p class="prices__item__text">Доставка 35-50 дней</p>
+                    <p class="prices__item__text_red">от 0,3$ за 1 кг</p>
+                    <p class="prices__item__descr">Морские перевозки грузов из Китая в Россию за 35 дней 
+                        с прохождением таможни</p>
+                    <button class="button prices__item__button">Подробнее</button>
+                </div>
+                <div class="prices__item">
+                    <div class="prices__item__header">
+                        <h3 class="title title_fz16 title_white">Ж/Д доставка</h3>
+                    </div>
+                    <div class="prices__item__img">
+                        <img src="icons/prices/railway.png" alt="railway">
+                    </div>
+                    <p class="prices__item__text">Доставка 15-28 дней</p>
+                    <p class="prices__item__text_red">от 1$ за 1 кг</p>
+                    <p class="prices__item__descr">ЖД перевозки грузов из Китая в Россию от 2 недель 
+                        с прохождением таможни</p>
+                    <button class="button prices__item__button">Подробнее</button>
+                </div>
+                <div class="prices__item">
+                    <div class="prices__item__header">
+                        <h3 class="title title_fz16 title_white">Автодоставка</h3>
+                    </div>
+                    <div class="prices__item__img">
+                        <img src="icons/prices/car.png" alt="car">
+                    </div>
+                    <p class="prices__item__text">Доставка 12-20 дня</p>
+                    <p class="prices__item__text_red">от 1$ за 1 кг</p>
+                    <p class="prices__item__descr">Автоперевозки грузов из Китая в Россию от 2 недель 
+                        с прохождением таможни</p>
+                    <button class="button prices__item__button">Подробнее</button>
+                </div>
+                <div class="prices__item">
+                    <div class="prices__item__header">
+                        <h3 class="title title_fz16 title_white">Авиа доставка</h3>
+                    </div>
+                    <div class="prices__item__img">
+                        <img src="icons/prices/airplane.png" alt="airplane">
+                    </div>
+                    <p class="prices__item__text">Доставка 1-12 дней</p>
+                    <p class="prices__item__text_red">от 6$ за 1 кг</p>
+                    <p class="prices__item__descr">Авиаперевозки грузов из Китая в Россию до 2 недель 
+                        с прохождением таможни</p>
+                    <button class="button prices__item__button">Подробнее</button>
+                </div>
+            </div>
+            <form id="form__prices" class="form__prices" action="#">
+                <div class="form__prices__title">Заказать бесплатную консультацию</div>
+                <div class="form__prices__wrapper">
+                        <div class="form__prices__img-wrapper">
+                            <div class="form__prices__img">
+                                <img src="icons/consultation.png" alt="consultation">                           
+                            </div>
+                        </div>
+                        <input class="form__input form__input_small" name="name" id="name" placeholder="Ваше имя..." type="text">
+                        <input class="form__input form__input_small" name="phone" id="phone" placeholder="Ваш номер телефона...">
+                        <input class="form__input form__input_small" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                        <div class="form__prices__button-wrapper">
+                            <button class="button button_forms">Отправить заявку</button>  
+                        </div>
+                </div>
+            </form>
         </div>
     </section>
 

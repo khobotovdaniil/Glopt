@@ -1,7 +1,7 @@
 .services {
     padding: 50px 0; 
     min-height: 620px;
-    &__subheader {
+    &__subtitle {
         display: block;
         max-width: 850px;
         margin: 0 auto;
@@ -27,7 +27,7 @@
     &__descr {
         font-size: 14px;
         font-weight: 300;
-        color: #3a3a3a;
+        color: var(--text-color-3a);
         text-align: center;
     }
 }

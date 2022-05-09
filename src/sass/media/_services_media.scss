@@ -1,8 +1,12 @@
+@media (max-width: 767px) {
+    .services {
+        padding: 50px 0;
+    }
+}
+
 @media (max-width: 575px) {
     .services {
-        &__subheader {
-            font-size: 16px;
-        }
+        padding: 30px 0;
         &__wrapper {
             margin-top: 20px;
             grid-template-columns: repeat(auto-fit, 290px);
