@@ -53,7 +53,7 @@
                     <li class="header__menu__divider"></li>
                     <li class="header__menu__item"><a href="#feedbacks">Отзывы</a></li>
                     <li class="header__menu__divider"></li>
-                    <li class="header__menu__item"><a href="#contacts">Контакты</a></li>
+                    <li class="header__menu__item"><a href="#map">Контакты</a></li>
                 </ul>
                 <div class="header__contact">
                     <div class="header__contact__text">
@@ -284,9 +284,9 @@
                                 <img src="icons/consultation.png" alt="consultation">                           
                             </div>
                         </div>
-                        <input class="form__input form__input_small" name="name" id="name" placeholder="Ваше имя..." type="text">
-                        <input class="form__input form__input_small" name="phone" id="phone" placeholder="Ваш номер телефона...">
-                        <input class="form__input form__input_small" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                        <input class="form__input" name="name" id="name" placeholder="Ваше имя..." type="text">
+                        <input class="form__input" name="phone" id="phone" placeholder="Ваш номер телефона...">
+                        <input class="form__input" name="email" id="email" placeholder="Ваш e-mail..." type="email">
                         <div class="form__prices__button-wrapper">
                             <button class="button button_forms">Отправить заявку</button>  
                         </div>
@@ -401,10 +401,61 @@
         </div>
     </section>
 
+    <section id="questions" class="questions">
+        <form id="form__questions" class="form__questions" action="#">
+            <div class="form__questions__header">
+                <div class="form__questions__title">Остались вопросы?</div>
+                <div class="form__questions__subtitle">Напишите нам!</div>
+            </div>
+            <div class="form__questions__body">
+                <div class="form__questions__wrapper">
+                    <input class="form__input" name="name" id="name" placeholder="Ваше имя..." type="text">
+                    <input class="form__input" name="phone" id="phone" placeholder="Ваш номер телефона...">
+                    <input class="form__input" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                </div>
+                <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Сообщение..."></textarea>
+                <button class="button button_forms">Отправить заявку</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.1565346139259!2d37.62857529376828!3d55.74815970798539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1652117499639!5m2!1sru!2sru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper footer__wrapper_top">
+                <div class="footer__img">
+                    <img src="icons/promo/logo.png" alt="logo">
+                </div>
+                <div class="footer__text">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
+                <div class="footer__contact">
+                    <div class="footer__contact__text">
+                        <p>Есть вопросы?</p>
+                        <div class="footer__contact__phone">
+                            <a href="tel:+79264230100">+7 (926) 423 01 00</a>
+                        </div>   
+                    </div>   
+                    <button class="button">Перезвоните мне</button>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__wrapper footer__wrapper_bottom">
+                <div class="footer__copyright">© 2022 Хоботов Д.Д.</div>
+                <a class="footer__copyright footer__copyright_link" href="#">Политика конфидециальности</a>
+                <div class="footer__copyright footer__copyright_text">Создание сайта:</div>
+                <div class="footer__copyright__img">
+                    <img src="icons/promo/logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script> 
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>  
 </body>
 </html>
