@@ -3,9 +3,7 @@
 @import 'libs/owl-core';
 @import 'libs/owl-animate';
 @import 'libs/owl-autoheight';
-// @import 'libs/owl-lazyload';
-// @import 'libs/owl-theme.default';
-// @import 'libs/owl-theme';
+@import 'libs/animate.min';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -49,6 +47,10 @@ p {
     margin: 0 auto;
 }
 
+.form__input.error {
+    border: 1px solid red;
+}
+
 @import 'blocks/titles';
 @import 'blocks/buttons';
 @import 'blocks/header';
@@ -62,6 +64,8 @@ p {
 @import 'blocks/feedbacks';
 @import 'blocks/questions';
 @import 'blocks/map_footer';
+@import 'blocks/modal';
+@import 'blocks/policy';
 
 @import 'media/media';
 @import 'media/titles_media';

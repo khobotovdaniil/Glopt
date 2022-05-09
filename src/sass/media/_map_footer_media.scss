@@ -26,7 +26,28 @@
     }
 }
 
+@media (max-width: 767px) {
+    .map {
+        &__wrapper {
+            left: 42%;
+        }
+    }
+}
+
+
 @media (max-width: 575px) {
+    .map {
+        &__wrapper {
+            width: 290px;
+            top: 65%;
+            left: 5%;
+            &:before {
+                top: -6px;
+                left: 50%;
+                transform: rotate(135deg) translateY(50%);
+            }
+        }
+    }
     .footer {
         &__wrapper {
             &_top {

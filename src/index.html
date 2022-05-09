@@ -62,7 +62,7 @@
                             <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>   
                     </div>   
-                    <button class="button">Перезвоните мне</button>
+                    <button data-modal="callback" class="button">Перезвоните мне</button>
                 </div>
             </header>
             <div class="title title_fz24 title_white">Global Opt - логистика полного цикла из Китая в Россию</div>
@@ -91,7 +91,7 @@
                     <p class="promo__services__descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</p>
                 </div>
             </div>
-            <button class="button button_big">Получить расчет</button>
+            <button data-modal="callback" class="button button_big">Получить расчет</button>
         </div>
     </section>
 
@@ -181,7 +181,7 @@
             <div class="divider"></div>
             <p class="title title_fz21 services__subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.</p>
             <div class="services__wrapper">
-                <div class="services__item">
+                <div class="services__item animate__animated animate__fadeInLeft wow" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="services__img">
                         <img src="img/services/insurance.jpg" alt="insurance">
                     </div>
@@ -195,7 +195,7 @@
                     <h3 class="title title_fz16 title_red">Логистика последней мили</h3>
                     <p class="services__descr">Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.</p>
                 </div>
-                <div class="services__item">
+                <div class="services__item animate__animated animate__fadeInRight wow" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="services__img">
                         <img src="img/services/look.jpg" alt="look">
                     </div>
@@ -223,7 +223,7 @@
             <p class="title title_fz21 prices__subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений.
                 Любой груз доставим вовремя.</p>
             <div class="prices__wrapper">
-                <div class="prices__item">
+                <div class="prices__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
                     <div class="prices__item__header">
                         <h3 class="title title_fz16 title_white">Доставка морем</h3>
                     </div>
@@ -234,9 +234,9 @@
                     <p class="prices__item__text_red">от 0,3$ за 1 кг</p>
                     <p class="prices__item__descr">Морские перевозки грузов из Китая в Россию за 35 дней 
                         с прохождением таможни</p>
-                    <button class="button prices__item__button">Подробнее</button>
+                    <button data-modal="callback" class="button prices__item__button">Подробнее</button>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.2s">
                     <div class="prices__item__header">
                         <h3 class="title title_fz16 title_white">Ж/Д доставка</h3>
                     </div>
@@ -247,9 +247,9 @@
                     <p class="prices__item__text_red">от 1$ за 1 кг</p>
                     <p class="prices__item__descr">ЖД перевозки грузов из Китая в Россию от 2 недель 
                         с прохождением таможни</p>
-                    <button class="button prices__item__button">Подробнее</button>
+                    <button data-modal="callback" class="button prices__item__button">Подробнее</button>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.3s">
                     <div class="prices__item__header">
                         <h3 class="title title_fz16 title_white">Автодоставка</h3>
                     </div>
@@ -260,9 +260,9 @@
                     <p class="prices__item__text_red">от 1$ за 1 кг</p>
                     <p class="prices__item__descr">Автоперевозки грузов из Китая в Россию от 2 недель 
                         с прохождением таможни</p>
-                    <button class="button prices__item__button">Подробнее</button>
+                    <button data-modal="callback" class="button prices__item__button">Подробнее</button>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.4s">
                     <div class="prices__item__header">
                         <h3 class="title title_fz16 title_white">Авиа доставка</h3>
                     </div>
@@ -273,7 +273,7 @@
                     <p class="prices__item__text_red">от 6$ за 1 кг</p>
                     <p class="prices__item__descr">Авиаперевозки грузов из Китая в Россию до 2 недель 
                         с прохождением таможни</p>
-                    <button class="button prices__item__button">Подробнее</button>
+                    <button data-modal="callback" class="button prices__item__button">Подробнее</button>
                 </div>
             </div>
             <form id="form__prices" class="form__prices" action="#">
@@ -419,11 +419,21 @@
         </form>
     </section>
 
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.1565346139259!2d37.62857529376828!3d55.74815970798539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1652117499639!5m2!1sru!2sru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="map" class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9971c08663ffb453ae2645b610ccb47b799ffc1afb2d923ffdb2c1c3e5fa9d05&amp;source=constructor" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0; pointer-events:none"></iframe>
+        <div class="map__wrapper">
+            <div class="title title_fz16 title_red map__title">г. Москва</div>
+            <p> 
+                ул. Садовническая, дом 5, офис 4-6
+                <br>
+                700 от м. Новокузнецкая
+            </p>
+            <div class="map__phone">Тел: <a href="tel:+79264230100">+7 (926) 423 01 00</a></div>
+            <div class="map__email">info@glopt.ru</div>
+        </div>
     </section>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__wrapper footer__wrapper_top">
                 <div class="footer__img">
@@ -437,13 +447,13 @@
                             <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>   
                     </div>   
-                    <button class="button">Перезвоните мне</button>
+                    <button data-modal="callback" class="button">Перезвоните мне</button>
                 </div>
             </div>
             <div class="footer__divider"></div>
             <div class="footer__wrapper footer__wrapper_bottom">
                 <div class="footer__copyright">© 2022 Хоботов Д.Д.</div>
-                <a class="footer__copyright footer__copyright_link" href="#">Политика конфидециальности</a>
+                <a class="footer__copyright footer__copyright_link" href="/policy.html" target="_blank" rel="noopener noreferrer">Политика конфидециальности</a>
                 <div class="footer__copyright footer__copyright_text">Создание сайта:</div>
                 <div class="footer__copyright__img">
                     <img src="icons/promo/logo.png" alt="logo">
@@ -451,11 +461,27 @@
             </div>
         </div>
     </footer>
+    
+    <div class="overlay">
+        <div class="modal" id="callback">
+            <div class="modal__close">&times;</div>
+            <h3 class="title title_fz16 title_red">Просто заполните форму заявки</h3>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="form form_modal" action="#">
+                <input class="form__input form__input__modal" name="name" id="name" placeholder="Ваше имя..." type="text">
+                <input class="form__input form__input__modal" name="phone" id="phone" placeholder="Ваш номер телефона...">
+                <input class="form__input form__input__modal" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                <button class="button button_forms">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>  
 </body>
 </html>

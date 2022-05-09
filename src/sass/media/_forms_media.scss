@@ -1,10 +1,21 @@
 @media (max-width: 991px) {
     .form {
+        &__prices {
+            &__wrapper {
+                grid-template-columns: repeat(3, 220px);
+            }
+        }
         &__input {
             width: 220px;
+            &__modal {
+                width: 270px;
+            }
         }
         &__questions {
             width: 750px;
+            &__wrapper {
+                grid-template-columns: repeat(3, 220px);
+            }
         }
         &__textarea {
             width: 670px;
@@ -16,12 +27,26 @@
     .form {
        &__prices {
             &__wrapper {
-                flex-direction: column;   
+                grid-template-columns: 100%;
                 align-items: center;           
+            }
+            label.error {
+                border: none;
+                text-align: center;
+                font-size: 10px;
+                color: red;
+                order: 0;
             }
         }
         &__questions {
             width: 100%;
+            label.error {
+                border: none;
+                text-align: center;
+                font-size: 10px;
+                color: red;
+                order: 0;
+            }
             &__title {
                 font-size: 16px;
             }
@@ -29,7 +54,7 @@
                 font-size: 12px;
             }
             &__wrapper {
-                flex-direction: column;   
+                grid-template-columns: 100%; 
                 align-items: center;   
             }
             &__body {
@@ -37,8 +62,12 @@
             }
         }
         &__input {
-            margin: 10px 2px 10px 2px;
+            margin: 10px auto 10px auto;
             width: 70%;
+            &__modal {
+                width: 270px;
+                margin: 0;
+            }
         }
         &__textarea {
             width: 70%;

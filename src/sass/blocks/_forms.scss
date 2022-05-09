@@ -9,7 +9,9 @@
         &__wrapper {
             position: relative;
             padding: 65px 0 40px 0;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 270px);
+            column-gap: 4px;
             justify-content: center;
             margin-top: 70px;
             min-height: 166px;
@@ -47,6 +49,13 @@
             height: 45px;
             background-color: #fff;
         }
+        label.error {
+            border: none;
+            text-align: center;
+            font-size: 10px;
+            color: red;
+            order: 3;
+        }
     }
 
     &__input {
@@ -76,7 +85,7 @@
     &__questions {
         margin: 0 auto;
         width: 896px;
-        height: 297px;
+        height: 300px;
         &__header {
             padding-top: 20px;
             height: 68px;
@@ -103,8 +112,26 @@
             background-color: rgba(255,255,255,0.7);
         }
         &__wrapper {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 270px);
+            column-gap: 4px;
             justify-content: center;
+        }
+        label.error {
+            border: none;
+            text-align: center;
+            font-size: 10px;
+            color: red;
+            order: 3;
+        }
+    }
+    &_modal {
+        margin-top: 15px;
+        input {
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
         }
     }
 }
