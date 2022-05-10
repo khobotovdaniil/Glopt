@@ -17,8 +17,17 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-        //owl carousel
+
 $(document).ready(function(){
+
+        //top
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1200) {
+          $('.top').fadeIn();
+        } else $('.top').fadeOut();
+      });
+
+        //owl carousel
     $('.owl-carousel').owlCarousel({
         center:true,
         loop:true,
@@ -79,14 +88,11 @@ $(document).ready(function(){
     });
     
     $('.modal__close').on('click', function() {
-        $('.overlay, #callback').fadeOut('fast');
+        $('.overlay, #callback, #thanks').fadeOut('fast');
     });
 
-    $('.button_mini').each(function(i) {
-        $(this).on('click', function() {
-        $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-        $('.overlay, #order').fadeIn('slow');
-        })
+    $('.button_close').on('click', function() {
+        $('.overlay, #callback, #thanks').fadeOut('fast');
     });
 
         //mailer
@@ -100,7 +106,7 @@ $(document).ready(function(){
         }).done(function() {
             $(this).find("input").val("");
             $('#callback').fadeOut();
-            // $('.overlay, #thanks').fadeIn('slow');
+            $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
         });
         return false;

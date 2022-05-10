@@ -1,3 +1,7 @@
+#callback, #thanks {
+    display: none;
+}
+
 .overlay {
     display: none;
     position: fixed;
@@ -33,14 +37,16 @@
         color: var(--active-color);
         cursor: pointer;
     }
+    &_small {
+        height: 250px;
+        &__descr {
+            margin-top: 20px;
+        }
+    }
     label.error {
         border: none;
         text-align: center;
         font-size: 12px;
         color: red;
     }
-}
-
-#callback {
-    display: none;
 }

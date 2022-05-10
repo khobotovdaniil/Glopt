@@ -32,6 +32,24 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <nav class="top">
+        <div class="container">
+            <ul class="top__menu">
+                <li class="top__menu__item"><a href="#advantages">Преимущества</a></li>
+                <li class="top__menu__divider"></li>
+                <li class="top__menu__item"><a href="#services">Наша работа</a></li>
+                <li class="top__menu__divider"></li>
+                <li class="top__menu__item"><a href="#prices">Цены</a></li>
+                <li class="top__menu__divider"></li>
+                <li class="top__menu__item"><a href="#work">Схема работы</a></li>
+                <li class="top__menu__divider"></li>
+                <li class="top__menu__item"><a href="#feedbacks">Отзывы</a></li>
+                <li class="top__menu__divider"></li>
+                <li class="top__menu__item"><a href="#map">Контакты</a></li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
 
     <section id="promo" class="promo">
         <div class="container">
@@ -284,9 +302,9 @@
                                 <img src="icons/consultation.png" alt="consultation">                           
                             </div>
                         </div>
-                        <input class="form__input" name="name" id="name" placeholder="Ваше имя..." type="text">
-                        <input class="form__input" name="phone" id="phone" placeholder="Ваш номер телефона...">
-                        <input class="form__input" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                        <input class="form__input" name="name" placeholder="Ваше имя..." type="text">
+                        <input class="form__input" name="phone" placeholder="Ваш номер телефона...">
+                        <input class="form__input" name="email" placeholder="Ваш e-mail..." type="email">
                         <div class="form__prices__button-wrapper">
                             <button class="button button_forms">Отправить заявку</button>  
                         </div>
@@ -401,7 +419,7 @@
         </div>
     </section>
 
-    <section id="questions" class="questions">
+    <div id="questions" class="questions">
         <form id="form__questions" class="form__questions" action="#">
             <div class="form__questions__header">
                 <div class="form__questions__title">Остались вопросы?</div>
@@ -409,17 +427,17 @@
             </div>
             <div class="form__questions__body">
                 <div class="form__questions__wrapper">
-                    <input class="form__input" name="name" id="name" placeholder="Ваше имя..." type="text">
-                    <input class="form__input" name="phone" id="phone" placeholder="Ваш номер телефона...">
-                    <input class="form__input" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                    <input class="form__input" name="name" placeholder="Ваше имя..." type="text">
+                    <input class="form__input" name="phone" placeholder="Ваш номер телефона...">
+                    <input class="form__input" name="email" placeholder="Ваш e-mail..." type="email">
                 </div>
                 <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Сообщение..."></textarea>
                 <button class="button button_forms">Отправить заявку</button>
             </div>
         </form>
-    </section>
+    </div>
 
-    <section id="map" class="map">
+    <div id="map" class="map">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9971c08663ffb453ae2645b610ccb47b799ffc1afb2d923ffdb2c1c3e5fa9d05&amp;source=constructor" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0; pointer-events:none"></iframe>
         <div class="map__wrapper">
             <div class="title title_fz16 title_red map__title">г. Москва</div>
@@ -431,7 +449,7 @@
             <div class="map__phone">Тел: <a href="tel:+79264230100">+7 (926) 423 01 00</a></div>
             <div class="map__email">info@glopt.ru</div>
         </div>
-    </section>
+    </div>
 
     <footer id="footer" class="footer">
         <div class="container">
@@ -468,11 +486,20 @@
             <h3 class="title title_fz16 title_red">Просто заполните форму заявки</h3>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="form form_modal" action="#">
-                <input class="form__input form__input__modal" name="name" id="name" placeholder="Ваше имя..." type="text">
-                <input class="form__input form__input__modal" name="phone" id="phone" placeholder="Ваш номер телефона...">
-                <input class="form__input form__input__modal" name="email" id="email" placeholder="Ваш e-mail..." type="email">
+                <input class="form__input form__input__modal" name="name" placeholder="Ваше имя..." type="text">
+                <input class="form__input form__input__modal" name="phone" placeholder="Ваш номер телефона...">
+                <input class="form__input form__input__modal" name="email" placeholder="Ваш e-mail..." type="email">
                 <button class="button button_forms">Заказать звонок</button>
             </form>
+        </div>
+
+        <div class="modal modal_small" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="title title_fz16 title_red">Спасибо за вашу заявку!</div>
+            <div class="modal__descr modal_small__descr">
+                Наш менеджер свяжется с Вами в ближайшее время!
+            </div>
+            <button class="button button_close">Закрыть</button>
         </div>
     </div>
 
